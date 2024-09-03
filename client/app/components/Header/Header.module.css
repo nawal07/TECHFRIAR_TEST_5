@@ -1,18 +1,29 @@
-.header{
-    width: 100vw;
-    height: 80px;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(35, 35, 34);
-    color: whitesmoke;
-    font-size: 28px;
-    font-weight: 500;
+.header {
+  width: 100vw;
+  height: 80px;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(35, 35, 34);
+  color: whitesmoke;
+  font-size: 28px;
+  font-weight: 500;
 }
 
-.title{
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+.title {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.search {
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  top: 17px;
+  left: 6px;
+  opacity: .6;
+  cursor: pointer;
 }
