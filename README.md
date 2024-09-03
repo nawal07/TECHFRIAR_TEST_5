@@ -1,0 +1,1 @@
+A movie ticket booking web application developed using MongoDB, Express, NextJS, NodeJS (MERN).
