@@ -17,13 +17,13 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
           <Image
             src={'/search.png'}
             alt="search icon"
-            width={16}
-            height={16}
+            width={18}
+            height={18}
             className={styles.searchIcon}
           />
           <Input
             placeholder="Search movies here ..."
-            padding="12px 28px"
+            padding="12px 32px"
             width="480px"
             fontSize="15px"
           />
