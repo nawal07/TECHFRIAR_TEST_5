@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { Navigation, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import styles from './Carousel.module.css'; // Import your custom CSS module
+import styles from './Carousel.module.css'; 
 
 const images = [
   { src: '/Img1.jpg', alt: 'Image 1' },
@@ -24,12 +24,14 @@ const Carousel: React.FC = () => {
           nextEl: `.${styles.customNextButton}`,
           prevEl: `.${styles.customPrevButton}`,
         }}
-        loop={true} // Enables looping
-        speed={500} // Transition speed in ms
-        slidesPerView={1}
+        loop={true}
+        speed={500}
+        slidesPerView={1.2} 
+        centeredSlides={true} 
+        spaceBetween={20} 
         autoplay={{
-          delay: 2000, // Slide transition every 2 seconds
-          disableOnInteraction: false, // Keeps autoplay active after user interaction
+          delay: 2000, 
+          disableOnInteraction: false, 
         }}
       >
         {images.map((image, index) => (
