@@ -1,0 +1,54 @@
+/* Carousel.module.css */
+.carouselContainer {
+    width: 100%;
+    margin-top: 24px;
+    position: relative;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 90%;
+    /* height: 50vh;  */
+    padding-top: 20%;
+  }
+  
+  .image {
+    width: 90%;
+    /* object-fit: cover;  */
+  }
+
+.customPrevButton,
+.customNextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.customPrevButton {
+  left: 15px;
+}
+
+.customNextButton {
+  right: 5px;
+}
+
+.customPrevButton:hover,
+.customNextButton:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
