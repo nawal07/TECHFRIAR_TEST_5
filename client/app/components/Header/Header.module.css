@@ -24,6 +24,26 @@
   position: absolute;
   top: 16px;
   left: 8px;
-  opacity: .6;
+  opacity: 0.6;
   cursor: pointer;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.userProfile .image{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: #9d2525;
+  border-radius: 50%;
+  padding: 0px 10px;
+}
+
+.userProfile p {
+  font-size: 12px;
 }

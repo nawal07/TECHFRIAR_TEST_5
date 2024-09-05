@@ -31,7 +31,17 @@ const Header: React.FC<HeaderProps> = ({ title, islogged }) => {
         </div>
       </div>
       {islogged ? (
-        <p>Hello User</p>
+        <div className={styles.userProfile}>
+          <div className={styles.image}>
+            <Image
+              src={'/account.png'}
+              alt="User Icon"
+              width={20}
+              height={20}
+            ></Image>
+          </div>
+          <p>Hello User</p>
+        </div>
       ) : (
         <Button
           backgroundColor="#9d2525"
