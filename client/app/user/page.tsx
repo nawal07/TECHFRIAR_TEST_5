@@ -6,7 +6,7 @@ import Releases from '../components/Releases/Releases';
 const page = () => {
   return (
     <div>
-      <Header title="Filmy Partner" />
+      <Header title="Filmy Partner" islogged={true} />
       USER PAGE
       <Carousel />
       <Releases />

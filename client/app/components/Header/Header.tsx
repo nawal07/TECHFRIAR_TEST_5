@@ -6,9 +6,10 @@ import Input from '../Input/Input';
 
 interface HeaderProps {
   title: string;
+  islogged: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header: React.FC<HeaderProps> = ({ title, islogged }) => {
   return (
     <div className={styles.header}>
       <div className={styles.title}>
@@ -29,15 +30,19 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
           />
         </div>
       </div>
-      <Button
-        backgroundColor="#9d2525"
-        color="white"
-        borderRadius="5px"
-        padding="7px 12px"
-        text="Sign In"
-        fontSize="12px"
-        fontWeight="600"
-      />
+      {islogged ? (
+        <p>Hello User</p>
+      ) : (
+        <Button
+          backgroundColor="#9d2525"
+          color="white"
+          borderRadius="5px"
+          padding="7px 12px"
+          text="Sign In"
+          fontSize="12px"
+          fontWeight="600"
+        />
+      )}
     </div>
   );
 };
