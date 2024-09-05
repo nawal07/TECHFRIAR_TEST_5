@@ -1,13 +1,7 @@
-import React from 'react'
-import Header from '../components/Header/Header'
+import React from 'react';
 
 const page = () => {
-  return (
-    <div>
-        <Header title='Filmy Partner'/>
-      ADMIN PAGE
-    </div>
-  )
-}
+  return <div>ADMIN PAGE</div>;
+};
 
-export default page
+export default page;
